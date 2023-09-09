@@ -3,6 +3,7 @@ const btnAddCountryAll = document.querySelector("#btn-add-country-all")
 const spam = document.getElementById("idOutput");
 
 
+
 btnAddCountry.addEventListener("click", ()=>{
 
    
@@ -43,17 +44,22 @@ btnAddCountry.addEventListener("click", ()=>{
             */
 
             spam.textContent = printParagrahap ;
+        } 
+
+        else if(country === "Chile")
+        {
+            result=cash*1.18;
+            let printParagrahap = country+" = "+result;
+            spam.textContent = printParagrahap ;
+
         }
-        
-        
+        else if(country === "Peru")
+        {
+            result=cash*1.18;
+            let printParagrahap = country+" = "+result;
+            spam.textContent = printParagrahap ;
 
-
-    
-
-    
-    
-
-    
+        }
 
 });
 
@@ -87,6 +93,10 @@ btnAddCountryAll.addEventListener("click", ()=>{
          {
              result=operation(countryOption,cash);
          }
+         else if(countryOption==="Peru")
+         {
+             result=operation(countryOption,cash);
+         }
          
          let printParagrahp = countryOption+" = "+result;
          const paragraph = addParagraph(printParagrahp);
@@ -113,7 +123,6 @@ function operation(country, cash)
     {
         iva = 1.19;
         result=iva*cash;
-        console.log("hola")
         
 
         
@@ -126,14 +135,19 @@ function operation(country, cash)
         
 
     }
+    else if(country==="Peru")
+    {
+
+        iva = 1.21;
+        result=iva*cash;
+        
+
+    }
 
     return result;
     
 
 }
-
-
-
 
 function addParagraph(text)
 {

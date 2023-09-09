@@ -12,30 +12,38 @@
     <main>
 
         <div class="container table-iva">
-            <input id="input-cash" placeholder="Add cash" type="text">
-            <select name="country" id="country-select" required>
+            <h1>IVA Calculator</h1>
+            <div class="table-iva-add-select">
                 
-                
-                <option value="Country" selected> Country</option>
-                <option value="Chile"> Chile</option>
-                <option value="Argentina"> Argentina</option>
-                <option value="otro"> otro</option>
+                <input id="input-cash" placeholder="Add cash" type="text">
+                <select name="country" id="country-select" required>
+                    
+                    
+                    <option value="Country" selected> Country</option>
+                    <option value="Chile"> Chile</option>
+                    <option value="Argentina"> Argentina</option>
+                    <option value="Peru"> Peru</option>
+    
+                    
+    
+                </select>
+            </div>
+             <div>
+                <button id="btn-add-country">Calcule IVA</button>
+                <button id="btn-add-country-all">Calcule IVA all</button>
+             </div>
 
-                
-
-            </select>
-            <button id="btn-add-country">Calcule IVA</button>
-            <button id="btn-add-country-all">Calcule IVA all</button>
-        </div>
-
-        <div class="container">
-            <div class="allList">
-
-                <span class="print_id" id="idOutput"></span>
-
-
+             <div class="container iva-result">
+                <div class="allList">
+    
+                    <span class="print_id" id="idOutput"></span>
+    
+    
+                </div>
             </div>
         </div>
+
+        
     </main>
 
    
