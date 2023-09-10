@@ -18,7 +18,8 @@ btnAddCountry.addEventListener("click", ()=>{
         let result;
         if (country==="Country")
         {
-            spam.textContent = "Debes seleccionar un pais Pais"
+            spam.textContent = "You must select the country"
+            console.log("You must select the country")
 
             
         }
@@ -29,6 +30,7 @@ btnAddCountry.addEventListener("click", ()=>{
             result=cash*1.21;
             let printParagrahap = country+" = "+result;
             spam.textContent = printParagrahap ;
+            console.log(printParagrahap);
 
         }
 
@@ -44,6 +46,7 @@ btnAddCountry.addEventListener("click", ()=>{
             */
 
             spam.textContent = printParagrahap ;
+            console.log(printParagrahap);
         } 
 
         else if(country === "Chile")
@@ -51,6 +54,7 @@ btnAddCountry.addEventListener("click", ()=>{
             result=cash*1.18;
             let printParagrahap = country+" = "+result;
             spam.textContent = printParagrahap ;
+            console.log(printParagrahap);
 
         }
         else if(country === "Peru")
@@ -58,6 +62,7 @@ btnAddCountry.addEventListener("click", ()=>{
             result=cash*1.18;
             let printParagrahap = country+" = "+result;
             spam.textContent = printParagrahap ;
+            console.log(printParagrahap);
 
         }
 
@@ -102,6 +107,7 @@ btnAddCountryAll.addEventListener("click", ()=>{
          const paragraph = addParagraph(printParagrahp);
          const allList = document.querySelector(".allList");
          allList.appendChild(paragraph);
+         console.log(printParagrahp);
  
  
      }
